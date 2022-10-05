@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+            padding: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+    <script>
+        function generate() {
+            $.get("Technobable/", function (Ok) {
+                $("#results").html(" <div class='alert alert-primary'> I just cant do it captain the " + Ok + " is broken! </div > ")
+            })
+        }
+    </script>
+    <h1>Technobabble Generator</h1>
+    <iframe class="video" src="https://www.youtube.com/embed/h4idB5KAfyc">
+    </iframe>
+
+    <div class="alert alert-info">
+        <p><strong>Oh No! </strong></p>
+        <p>
+            The star trek writers are on strike! Don't you worry because the tachnobabble generator will allow you to come up with episodes ideas in no time at all.
+        </p>
+        <p>you can almost not tell de difference!</p>
+        <small>results may very...</small>
+    </div>
+
+    <form>
+        <button type="button" class="btn btn-primary" onclick="generate()">Generate Technobabble</button>
+    </form>
+
+    <div id="results" style="margin-top:15px;">
+
+    </div>
+</body>
+</html>

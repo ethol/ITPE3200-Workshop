@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+            padding: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+    <script>
+        function calculate() {
+            var weight = $("#coconutWeight").val();
+            var capacity = $("#swallowCapacity").val();
+
+            $.get("SwallowCalculator/" + weight + "/" + capacity, function (Ok) {
+                $("#results").html(" <div class='alert alert-primary'> It would require " + Ok + " swallows to carry a " + weight + "g cocount </div>")
+            })
+        }
+    </script>
+    <h1>Laden Swallow calculator</h1>
+
+    <iframe class="video" src="https://www.youtube.com/embed/liIlW-ovx0Y">
+    </iframe>
+    <form>
+        <div class="form-group">
+            <label for="coconutWeight">Coconut weight</label>
+            <input type="number" class="form-control" id="coconutWeight" aria-describedby="coconutWeight" placeholder="Enter coconut weight in grams">
+        </div>
+        <div class="form-group">
+            <label for="swallowCapacity">Coconut weight</label>
+            <input type="number" class="form-control" id="swallowCapacity" aria-describedby="swallowCapacity" placeholder="Enter the maximum carrying capacity of a swallow">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+    </form>
+    
+    <div id="results" style="margin-top:15px;">
+        
+    </div>
+</body>
+</html>

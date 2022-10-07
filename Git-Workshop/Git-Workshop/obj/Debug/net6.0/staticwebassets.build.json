@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "DLS9VNhSLH+rrPbRZx6c28LoBAB+rcCKvTQEvIoEy6A=",
+  "Source": "Git-Workshop",
+  "BasePath": "_content/Git-Workshop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Git-Workshop\\wwwroot",
+      "Source": "Git-Workshop",
+      "ContentRoot": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\",
+      "BasePath": "_content/Git-Workshop",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\index.html",
+      "SourceId": "Git-Workshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\",
+      "BasePath": "_content/Git-Workshop",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\swallow.html",
+      "SourceId": "Git-Workshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\",
+      "BasePath": "_content/Git-Workshop",
+      "RelativePath": "swallow.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swallow.html"
+    },
+    {
+      "Identity": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\technobabble.html",
+      "SourceId": "Git-Workshop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tomglove\\Documents\\GitHub\\ITPE3200-Workshop\\Git-Workshop\\Git-Workshop\\wwwroot\\",
+      "BasePath": "_content/Git-Workshop",
+      "RelativePath": "technobabble.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\technobabble.html"
+    }
+  ]
+}
